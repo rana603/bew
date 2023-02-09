@@ -1,0 +1,10 @@
+.loadingCSS {
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    text-align: center;
+    /* width: 250px; */
+    border: 1px solid  #fdd835;
+  }
