@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 // import { useEffect } from 'react'
-import { Divider, Flex, Button,ButtonGroup, HStack, SimpleGrid, Spacer, Stack, Text, VStack, Wrap } from '@chakra-ui/react'
+import { Divider, Flex, Button, ButtonGroup, HStack, SimpleGrid, Spacer, Stack, Text, VStack, Wrap } from '@chakra-ui/react'
 import { AppContext } from '../../Context/AppContext';
 import Loading from '../Loading/Loading';
 import TwoImages from '../Homepage/TwoImages';
@@ -26,10 +26,10 @@ const WomensData = () => {
 
 
 
-  useEffect(()=>{
+  useEffect(() => {
     setwomenData(AllProductsData.womenData)
 
-  },[womenData])
+  }, [womenData])
   // useEffect(() => {
   //   setmenData(AllProductsData.menData)
   // }, [mendata])
@@ -91,15 +91,15 @@ const WomensData = () => {
 
 
         <HStack spacing={50} width="1200px" justify="stretch"  >
-        <SimpleGrid spacing={5} columns={[1, 2, 2, 3]}>
+          <SimpleGrid spacing={5} columns={[1, 2, 2, 3]}>
 
-          {AllProductsData.womenData.map((el) => (
-            <ProductCard  {...el} />
-          ))}
+            {AllProductsData.womenData.map((el) => (
+              <ProductCard  {...el} />
+            ))}
 
 
 
-        </SimpleGrid>
+          </SimpleGrid>
         </HStack>
 
       </Wrap>
